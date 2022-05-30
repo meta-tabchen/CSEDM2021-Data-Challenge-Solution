@@ -1,0 +1,25 @@
+program: deepctr.py
+method: bayes
+name: deepctr_5cv_adt
+metric:
+    goal: maximize
+    name: AUC_Value
+parameters:
+    model_name:
+        values: ["xDeepFM","DeepFM","ONN","AutoInt","WDL","NFM","AFN","DIFM","IFM","FiBiNET","DCN","DCNMix"]
+    batch_size:
+        values: [512,256,128]
+    lr:
+        values: [1e-2,1.5e-2,1e-3]
+    seed:
+        values: [42, 224, 3407,2022,1024,449]
+    sparse_emb_dim:
+        values: [16,32,64,128]
+    data_dir:
+        values: ["data/csedm_2021/processed"]  
+    cv:
+        values: [0,1,2,3,4]
+    adt_type:
+        values: [fgm]
+    adt_epsilon:
+        values: [0.5, 1, 5, 10, 15,20]

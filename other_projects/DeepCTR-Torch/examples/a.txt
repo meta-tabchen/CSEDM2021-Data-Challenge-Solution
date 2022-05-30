@@ -1,0 +1,27 @@
+cuda ready...
+Training use none adt ~~
+cuda:0
+Train on 128 samples, validate on 32 samples, 4 steps per epoch
+Epoch 1/10
+0s - loss:  0.6420 - binary_crossentropy:  0.6420 - auc:  0.6256 - val_binary_crossentropy:  0.5643 - val_auc:  0.4000
+Epoch 2/10
+0s - loss:  0.5083 - binary_crossentropy:  0.5083 - auc:  0.9731 - val_binary_crossentropy:  0.5526 - val_auc:  0.4229
+Epoch 3/10
+0s - loss:  0.3937 - binary_crossentropy:  0.3937 - auc:  0.9937 - val_binary_crossentropy:  0.5710 - val_auc:  0.4114
+Epoch 4/10
+0s - loss:  0.2521 - binary_crossentropy:  0.2521 - auc:  1.0000 - val_binary_crossentropy:  0.5980 - val_auc:  0.4686
+Epoch 5/10
+0s - loss:  0.1425 - binary_crossentropy:  0.1425 - auc:  1.0000 - val_binary_crossentropy:  0.6580 - val_auc:  0.4629
+Epoch 6/10
+0s - loss:  0.0905 - binary_crossentropy:  0.0905 - auc:  1.0000 - val_binary_crossentropy:  0.6514 - val_auc:  0.4971
+Epoch 7/10
+0s - loss:  0.0629 - binary_crossentropy:  0.0629 - auc:  1.0000 - val_binary_crossentropy:  0.6848 - val_auc:  0.5143
+Epoch 8/10
+0s - loss:  0.0453 - binary_crossentropy:  0.0453 - auc:  1.0000 - val_binary_crossentropy:  0.7132 - val_auc:  0.5371
+Epoch 9/10
+0s - loss:  0.0336 - binary_crossentropy:  0.0336 - auc:  1.0000 - val_binary_crossentropy:  0.7499 - val_auc:  0.5200
+Epoch 10/10
+0s - loss:  0.0267 - binary_crossentropy:  0.0267 - auc:  1.0000 - val_binary_crossentropy:  0.7668 - val_auc:  0.5314
+
+test LogLoss 0.5951
+test AUC 0.6093

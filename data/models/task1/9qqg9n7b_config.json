@@ -1,0 +1,8 @@
+{
+    "batch_size": 256,
+    "cv": 3,
+    "lr": 0.015,
+    "model_name": "AutoInt",
+    "sparse_emb_dim": 16,
+    "seed": 2022
+}

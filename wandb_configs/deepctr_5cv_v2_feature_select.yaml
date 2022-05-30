@@ -1,0 +1,23 @@
+program: deepctr.py
+method: bayes
+name: deepctr_5cv_v2_feature_select
+metric:
+    goal: maximize
+    name: AUC_Value
+parameters:
+    model_name:
+        values: ["xDeepFM","DeepFM","ONN","AutoInt","WDL","NFM"]
+    batch_size:
+        values: [512,256,128]
+    lr:
+        values: [1e-2,1.5e-2,1e-3]
+    seed:
+        values: [42, 224, 3407,2022,1024]
+    sparse_emb_dim:
+        values: [4,8,16,32,64,128]
+    data_dir:
+        values: ["data/csedm_2021/processed_v2_seed-0"]  
+    cv:
+        values: [0,1,2,3,4]
+    remove_features: 
+        values: ['SubjectID', 'ProblemID', 'AssignmentID', 'same_success_num', 'same_fail_num', 'same_avg_attempt', 'success_num', 'fail_num', 'avg_attempt', 's_rate', 'same_s_rate','success_num,s_rate','success_num,fail_num,s_rate','success_num,fail_num,s_rate,avg_attempt']
